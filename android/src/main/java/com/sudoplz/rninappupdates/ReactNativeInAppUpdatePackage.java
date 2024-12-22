@@ -11,12 +11,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class SpReactNativeInAppUpdatesPackage implements ReactPackage {
+public class ReactNativeInAppUpdatePackage implements ReactPackage {
     @NonNull
     @Override
     public List<NativeModule> createNativeModules(@NonNull ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
-        modules.add(new SpReactNativeInAppUpdatesModule(reactContext));
+        modules.add(new ReactNativeInAppUpdateModule(reactContext));
         return modules;
     }
 
